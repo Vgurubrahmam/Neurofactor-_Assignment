@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import "./app.css"
+import "./App.css"
 import Home from './components/home';
 import About from './components/aboutus';
 import Features from './components/features';
