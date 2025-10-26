@@ -1,0 +1,9 @@
+/* Global smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure sections have proper spacing for scroll */
+section {
+  scroll-margin-top: 80px;
+}

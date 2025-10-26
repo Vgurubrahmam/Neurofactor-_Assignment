@@ -1,0 +1,459 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: Plus Jakarta Sans;
+}
+.main-container{
+  width: 90%;
+  
+}
+.home-left{
+  width: fit-content;
+}
+.viewmenu-btn{
+    font-size: 15px;
+    border-radius: 0;
+    padding:12px 16px;
+    text-align: center;
+}
+.navbar-toggler-icon {
+  filter: invert(1); /* Makes it white */
+  /* For yellow color: use custom SVG or background override */
+}
+.navbar-toggler-icon-custom {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #ffc107; /* Bootstrap warning yellow */
+  position: relative;
+}
+
+.navbar-toggler-icon-custom::before,
+.navbar-toggler-icon-custom::after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #ffc107;
+  position: absolute;
+  left: 0;
+}
+
+.navbar-toggler-icon-custom::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon-custom::after {
+  top: 8px;
+}
+
+
+.circle-dark{
+  /* keep the circular look but scale on small screens */
+  width: min(350px, 45vw);
+  height: min(350px, 45vw);
+  max-width: 350px;
+  max-height: 350px;
+  border-radius: 50%;
+  background-color: #131212;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.circle-darker{
+  /* outer rounded container: keep aspect ratio and scale responsively */
+  width: min(1000px, 90vw);
+  height: min(500px, 50vw);
+  max-width: 1000px;
+  max-height: 500px;
+  border-radius: 50%;
+  background-color: #080808;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  border: 1px solid #201d1d;
+  border-bottom:0px;
+  position: relative; /* so absolutely-positioned children are anchored here */
+}
+
+.highlight-text {
+  background-color: #ffc107; /* Bootstrap warning yellow */
+  color: black;
+  font-weight: bold;
+  margin: 0;
+  width: 45px;
+  font-family:sans-serif;
+  padding: 0;
+  line-height: 1;
+  display: block;
+}
+
+.offset-small {
+  margin-left: 0.3rem; /* small horizontal shift */
+}
+
+.offset-large {
+  margin-left: 0.6rem; /* larger horizontal shift */
+}
+.handler{
+  border: 3px solid #ffc107;
+  width: 27px;
+  height: 8px;
+  border-radius: 6px 6px 0 0;
+  border-bottom: none;
+  font-size: small;
+  letter-spacing: 0cm;
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-left:11px;
+}
+.food-title{
+  font-family: "Plus Jakarta Sans";
+  color: #9A9A9A;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+.order-btn {
+  color: #9A9A9A;
+  width: fit-content;
+  border-radius: 0%;
+  border-color: #9A9A9A;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  
+}
+.know-more-btn{
+color: black;
+  width: fit-content;
+  border-radius: 0%;
+  border-color: #9A9A9A;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border-color: black;
+}
+.order-btn:hover {
+  color: black !important;         
+  border-color: #ffc107;           
+}
+
+.about-page{
+  background-color: #FCB017;
+}
+.order-btn .order-icon {
+  fill: #ffc107;                   
+  margin-left: 6px;                
+  transition: fill 0.3s ease;     
+}
+
+.order-btn:hover .order-icon {
+  fill: black;                    
+}
+.cuisine_plate{
+  transform: rotate(146deg);
+  /* scale the plate image responsively while preserving original max size */
+  width: min(660px, 80%);
+  max-width: 660px;
+  height: auto;
+  position: absolute;
+  /* position using relative units so the composition remains similar across sizes */
+  left: 5%;
+  top: 6%;
+}
+
+/* Preserve exact original placement and sizes on very large screens */
+@media (min-width: 1200px) {
+  .circle-dark{ width: 350px; height: 350px; }
+  .circle-darker{ width: 1000px; height: 500px; }
+  .cuisine_plate{
+    width: 657.7959299231293px;
+    height: 420.2960618746959px;
+    left: -6px;
+    top: 33px;
+  }
+}
+
+/* Tweak for small screens so nothing overflows */
+@media (max-width: 767px){
+  .circle-darker{ height: 55vw; }
+  .circle-dark{ width: 50vw; height: 50vw; }
+  .cuisine_plate{ left: 18%; top: 18%; width: 75%; }
+}
+@media (max-width: 768px) {
+  .w-md-100 {
+    width: 100% !important;
+  }
+}
+.about-data{
+  width:fit-content;
+}
+@media (max-width:768px) {
+  
+  .about-page{
+   font-family: "Plus Jakarta Sans";
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 100%;
+  background-color: #FCB017;
+  padding-top: 30px;
+
+
+  }
+}
+.about-text{
+  font-family: "Plus Jakarta Sans";
+  letter-spacing: 18px;
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 170%;
+}
+.bg-cover {
+  object-fit: cover;
+  transform: scaleX(-1);
+  object-position: left;
+}
+.features-header{
+  letter-spacing: 5px;
+  font-size: 10px;
+  color: #FCB017;
+  font-family: Plus Jakarta Sans;
+}
+.img-crop {
+  width: 300px;        
+  height: 300px;        
+}
+.feature-page{
+  background-color: #0b0b0b;
+  color: #9A9A9A;
+  font-family: Plus Jakarta Sans;  
+}
+.feature-page-middle{
+    backdrop-filter: blur(10px);
+background-color: #96969605;
+  color: #9A9A9A;
+;
+}
+@media (max-width:768px) {
+  .feature-text{
+    font-size: 50px;
+    width: 200px;
+  }
+  .feature-page{
+    width: 200px;
+  }
+  .booktableimg{
+    width: 100%;
+  background-size: cover;
+  object-fit: cover;
+  object-position: right;
+  }
+  .about-text{
+    letter-spacing: 10px;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 150%;
+  }
+ 
+}
+.feature-text {
+  background-color: #3f3e3e; /* Bootstrap warning yellow */
+  color: black;
+  font-weight: bold;
+  margin: 0;
+  width: 350px;
+  font-family:sans-serif;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  font-size: 120px;
+}
+.feature-handler{
+  border: 16px solid #3f3e3e;
+  width: 270px;
+  height: 80px;
+  border-radius: 30px 30px 0 0;
+  border-bottom: none;
+  font-size: small;
+  letter-spacing: 0cm;
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-left:11px;
+}
+.booktableimg {
+  width: 50%;
+  height: 100vh;             /* Full height for desktop */
+  object-fit: cover;
+  object-position: right;
+  display: block;
+}
+
+/* ✅ Mobile view fix only */
+@media (max-width: 768px) {
+  .booktableimg {
+    width: 100%;             
+    height: auto;            
+    object-position: center;
+    text-align: center; 
+  }
+
+  .w-50 {
+    width: 100% !important;  
+  }
+
+  .ms-5 {
+    margin-left: 0 !important; 
+  }
+
+  .p-md-5 {
+    padding: 1.5rem !important; 
+  }
+  
+
+  
+}
+.specilaties-con {
+  width: 480px;
+  height: 480px;
+  background-color: #080808;
+  border-radius: 50%;
+  border: 1px solid #201d1d;
+  position: relative;
+  overflow: visible; /* so O circles can appear slightly outside */
+}
+
+.specialitiesimg {
+  width: 85%;
+  height: auto;
+  z-index: 1;
+  padding-bottom: 30px;
+  transform: rotate(270deg);
+}
+
+/* Small circle “O” shapes */
+.circle-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.circle-list li {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #9A9A9A; /* yellow border */
+  border-radius: 50%;
+  background: transparent;
+}
+
+/* evenly spaced around the main circle */
+.circle-list li:nth-child(1)  { transform: rotate(0deg) translate(240px) rotate(0deg); }
+.circle-list li:nth-child(2)  { transform: rotate(50deg) translate(240px) rotate(-30deg); }
+.circle-list li:nth-child(3)  { transform: rotate(140deg) translate(240px) rotate(-60deg); }
+.circle-list li:nth-child(4)  { transform: rotate(170deg) translate(240px) rotate(-90deg); }
+.circle-list li:nth-child(5)  { transform: rotate(310deg) translate(240px) rotate(-120deg); }
+.circle-list li:nth-child(6)  { transform: rotate(205deg) translate(240px) rotate(-150deg); }
+.chefprofile {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px; 
+  position: relative;
+}
+
+
+
+.chef-con{
+  color: #CACACA;
+  padding-left: 80px;
+}
+.chef-sign{
+  font-family: Vladimir Script;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 92%;
+  color: #0b0b0b;
+
+    position: absolute;
+  bottom: -100px;
+  right: 10px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+.mapimg{
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+}
+.mapcard{
+background-color: #56545405 ;
+  color: #9A9A9A;
+padding: 10px;
+position: absolute;
+z-index: 1;
+right: -80px;
+top: 140px;
+border-radius: 6px;
+}
+@media (max-width:768px) {
+  .chefprofile{
+    width: 100%;
+  }
+  .chef-con{
+    padding: 0;
+  }
+  .mapimg{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+}
+.mapcard{
+background-color: #56545405 ;
+  color: #9A9A9A;
+padding: 10px;
+position: absolute;
+z-index: 1;
+left: 150px;
+top: 0px;
+border-radius: 6px;
+width: fit-content;
+}
+}
+.spoonimg{
+  width: 15%;
+  transform: rotate(80deg);
+  
+
+}
+.userprofile{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.communityimgs{
+  width: 250px;
+  height: 250px;
+}
+.contact-address{
+  color: #757575;
+  letter-spacing:4px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
