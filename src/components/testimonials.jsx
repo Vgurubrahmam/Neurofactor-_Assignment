@@ -21,7 +21,7 @@ function Testimonial() {
                 <hr className="text-secondary w-100"/>
                 <div className="d-flex justify-content-start align-content-center align-items-center gap-2 text-white">
                     <img src="./profile1.jpg " alt="" className="userprofile" />
-                    <div className="gap-0 m-0 p-0">
+                    <div className="gap-0 m-0 p-0 text-secondary">
                     <p>Anna Mathew</p>
                     <p>one day ago</p>
                     </div>
@@ -43,9 +43,9 @@ function Testimonial() {
                 <p className="text-white">steak experience! The food, service, and ambiance are second to none. We </p>
                 <hr className="text-secondary w-100"/>
                 <div className="d-flex justify-content-start align-content-center align-items-center gap-2 text-white">
-                    <img src="./profile1.jpg " alt="" className="userprofile" />
-                    <div className="gap-0 m-0 p-0">
-                    <p>Anna Mathew</p>
+                    <img src="./user2.jpg " alt="" className="userprofile" />
+                    <div className="gap-0 m-0 p-0 text-secondary">
+                    <p>Gerrin Tom</p>
                     <p>one day ago</p>
                     </div>
                 </div>
@@ -66,9 +66,9 @@ function Testimonial() {
                 <p className="text-white">steak experience! The food, service, and ambiance are second to none. We </p>
                 <hr className="text-secondary w-100"/>
                 <div className="d-flex justify-content-start align-content-center align-items-center gap-2 text-white">
-                    <img src="./profile1.jpg " alt="" className="userprofile" />
-                    <div className="gap-0 m-0 p-0">
-                    <p>Anna Mathew</p>
+                    <img src="./user3.jpg " alt="" className="userprofile" />
+                    <div className="gap-0 m-0 p-0 text-secondary">
+                    <p>Mery Elza</p>
                     <p>one day ago</p>
                     </div>
                 </div>
@@ -89,9 +89,9 @@ function Testimonial() {
                 <p className="text-white fs-6">steak experience! The food, service, and ambiance are second to none. We </p>
                 <hr className="text-secondary w-100"/>
                 <div className="d-flex justify-content-start align-content-center align-items-center gap-2 text-white">
-                    <img src="./profile1.jpg " alt="" className="userprofile" />
-                    <div className="gap-0 m-0 p-0">
-                    <p>Anna Mathew</p>
+                    <img src="./user3.jpg " alt="" className="userprofile" />
+                    <div className="gap-0 m-0 p-0  text-secondary">
+                    <p>Mery Elza</p>
                     <p>one day ago</p>
                     </div>
                 </div>

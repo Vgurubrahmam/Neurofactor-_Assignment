@@ -457,3 +457,7 @@ width: fit-content;
   text-transform: uppercase;
   font-size: 14px;
 }
+.cakeimg{
+  width: 200px;
+  height: 200px;
+}
