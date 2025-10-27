@@ -155,7 +155,7 @@ color: black;
   fill: black;                    
 }
 .cuisine_plate{
-  transform: rotate(146deg);
+  transform: rotate(156deg);
   /* scale the plate image responsively while preserving original max size */
   width: min(660px, 80%);
   max-width: 660px;
